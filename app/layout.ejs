@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="bg-light">
+    <div class="container">
+      <div class="header d-flex justify-content-between align-items-center">
+        <h1><a href="index.html"><img class="logo"
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true"
+              alt=""></a></h1>
+        <ul class="list-unstyled d-flex my-4">
+          <li class="me-7">
+            <a href="#" class="text-success">課程介紹</a>
+          </li>
+          <li class="me-7">
+            <a href="#" class="text-success">瑜珈空間</a>
+          </li>
+          <li class="me-7">
+            <a href="#" class="text-success">當月課表</a>
+          </li>
+        </ul>
+      </nav>
+        <div>
+          <a href="reservation.html" class="btn btn-outline-primary borads-16 me-3">立即預約</a>
+          <a href="#" class="btn btn-outline-primary borads-16">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- contents %>
+    <div class="bg-secondary">
+      <div class="container">
+        <footer class="footer py-7 text-white">
+          <div class="row justify-content-between">
+            <div class="col-lg-8">
+              <h3>現在訂閱，獲得課程優惠碼！</h3>
+            </div>
+            <div class="col-lg-4">
+              <div class="input-group">
+                <input type="text" class="form-control py-2 font-s" placeholder="輸入您的電子信箱">
+                <button type="button" class="btn btn-primary text-white font-s">訂閱</button>
+              </div>
+            </div>
+            <hr class="my-7">
+          </div>
+          <div class="d-flex justify-content-between">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <h1><a href="#"><img class="logo"
+                      src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true"
+                      alt=""></a></h1>
+              </li>
+              <li class="mb-2">課程介紹</li>
+              <li class="mb-2">瑜珈空間</li>
+              <li>當月課表</li>
+            </ul>
+            <p class="text-center mt-auto">© 2021. All Rights Reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li><i class="bi bi-facebook font-m text-white me-2"></i></li>
+              <li><i class="bi bi-instagram font-m text-white me-2"></i></li>
+              <li><i class="bi bi-instagram font-m text-white me-2"></i></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script>
+      (function() {
+
+'use strict';
+
+// breakpoint where swiper will be destroyed
+// and switches to a dual-column layout
+const breakpoint = window.matchMedia( '(max-width: 992px)' );
+
+// keep track of swiper instances to destroy later
+let mySwiper;
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+const breakpointChecker = function() {
+
+  // if larger viewport and multi-row layout needed
+  if ( breakpoint.matches === true ) {
+
+    // clean up old instances and inline styles when available
+    if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+
+    // or/and do nothing
+    return;
+
+    // else if a small viewport and single column layout needed
+  } else if ( breakpoint.matches === false ) {
+
+    // fire small viewport version of swiper
+    return enableSwiper();
+
+  }
+
+};
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+const enableSwiper = function() {
+
+  mySwiper = new Swiper ('.swiper-container', {
+
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+
+  });
+
+};
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+// keep an eye on viewport size changes
+breakpoint.addListener(breakpointChecker);
+
+// kickstart
+breakpointChecker();
+
+
+
+})(); /* IIFE end */
+    </script>
+</body>
+
+</html>

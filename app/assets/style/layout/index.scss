@@ -1,0 +1,100 @@
+.index__h1 {
+  color:#00cc99;
+  font-size: 20px;
+  font-weight: 400;
+}
+.header{
+  height: 80px;
+}
+.logo{
+  width: 96px;
+  height: 31px;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.borads-16{
+  border-radius: 16px;
+}
+.banner{
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true");
+  background-position: bottom center;
+  background-size: cover;
+  height: 582px;
+  width:100%;
+}
+.banner-content{
+  height: 580px;
+}
+.intro{
+  height: 420px;
+  object-fit: cover;
+}
+.card{
+  border-radius: 16px;
+}
+.card-img{
+  border-radius: 16px;
+}
+.teacher-img{
+  width: 94px;
+  height: 94px;
+}
+.teacher-banner{
+  width: 540px;
+  height: 628px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.title{
+  font-weight: bold;
+  color: #907A7B;
+}
+.subtitle{
+  font-weight: bold;
+  color: #c0a4a5;
+}
+.course-img{
+  height: 350px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+.course-btn{
+  width: 302px;
+  color: white;
+}
+.space-main-img{
+  width: 350px;
+  height: 444px;
+  object-fit: cover;
+}
+.space-sub-img{
+  width: 160px;
+  height: 207px;
+}
+.h-444{
+  height: 444px;
+}
+// reservation
+.course-item{
+  width: 330px;
+  height: 215px;
+}
+.course-level{
+  height: 393px;
+}
+.course-icon{
+  width: 36px;
+  height: 36px;
+}
+.attention{
+  width: 445px;
+}
+.reservation-btn{
+  width: 350px;
+}
+.footer-icon{
+  width: 24px;
+  height: 24px;
+}

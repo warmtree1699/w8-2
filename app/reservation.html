@@ -1,0 +1,117 @@
+---
+title: reservation
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container">
+    <div class="text-center mb-7 pt-10">
+        <h2 class="mb-3">立即預約</h2>
+        <div>
+            <button type="button" class="btn btn-lg btn-light borads-16 me-6">選擇方案</button>
+            <button type="button" class="btn btn-lg btn-light borads-16 me-6">填寫資料</button>
+            <button type="button" class="btn btn-lg btn-light borads-16">完成預約</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-center">
+        <h2 class="title">
+            方案選擇
+        </h2>
+        <h3 class="subtitle">DOYOGA 可以帶給你...</h3>
+    </div>
+    <div class="row mb-10">
+        <div class="col-lg-4">
+            <div class="card border-primary">
+                <img class="course-img"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
+                    alt="">
+                <div class="py-5 text-center border-primary">
+                    <h3 class="mb-1 text-secondary">首次體驗</h3>
+                    <h4 class="mb-2 text-primary">NT $450 / 次</h4>
+                    <p class="mb-8 text-secondary">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                    <button type="button" class="btn btn-primary course-btn font-s py-2">選擇課程</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img class="course-img"
+                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20performing%20yoga.jpg"
+                    alt="">
+                <div class="py-5 border-primary text-center">
+                    <h3 class="mb-1 text-secondary">短期體驗</h3>
+                    <h4 class="mb-2 text-primary">NT $1800 / 月</h4>
+                    <p class="mb-8 text-secondary">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                    <button type="button" class="btn btn-primary course-btn font-s">選擇課程</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <img class="course-img"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true"
+                    alt="">
+                <div class="py-5 text-center border-primary">
+                    <h3 class="mb-1 text-secondary">長期體驗</h3>
+                    <h4 class="mb-2 text-primary">NT $5600 / 月</h4>
+                    <p class="mb-8 text-secondary">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                    <button type="button" class="btn btn-primary course-btn font-s">選擇課程</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="bg-secondary course-level mb-10 pt-8 pb-10 px-8">
+        <h2 class="text-center text-white">選擇課程階級</h2>
+        <ul class="d-flex list-unstyled">
+            <li>
+                <div class="card course-item bg-primary text-white py-5 px-5">
+                    <div class="d-flex justify-content-between">
+                    <h3>基礎 Basic</h3>
+                    <span class="material-icons font-xl">
+                        check_circle_outline
+                        </span>
+                    </div>
+                    <div class="d-flex">
+                    <h4>基礎課程</h4>
+                    </div>
+                    <ul>
+                        <li>入體位法動作解說</li>
+                        <li>瑜珈基礎動作、順位</li>
+                        <li>適合任何階段練習者</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+</div>
+
+<div class="container">
+    <div class="text-center text-secondary">
+        <h2>您選擇的是</h2>
+        <h2>首次體驗課程-基礎</h2>
+        <h2>預約須知</h2>
+    </div>
+    <ul class="attention list-unstyled text-secondary fw-bold  mx-auto">
+        <li>
+            <p>1. 如果有特殊體質、特殊狀況，請主動告知。</p>
+        </li>
+        <li>
+            <p>2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</p>
+        </li>
+        <li>
+            <p>3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</p>
+        </li>
+        <li>
+            <p>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</p>
+        </li>
+    </ul>
+    <div class="text-center">
+    <button type="button" class="btn btn-primary reservation-btn font-s text-white mx-auto text-center">繼續預約</button>
+    </div>
+</div>
