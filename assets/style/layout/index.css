@@ -1,100 +1,129 @@
 .index__h1 {
-  color:#00cc99;
+  color: #00cc99;
   font-size: 20px;
   font-weight: 400;
 }
-.header{
+
+.header {
   height: 80px;
 }
-.logo{
+
+.logo {
   width: 96px;
   height: 31px;
 }
-img{
+
+img {
   display: block;
   width: 100%;
 }
-.borads-16{
+
+.borads-16 {
   border-radius: 16px;
 }
-.banner{
+
+.banner {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true");
   background-position: bottom center;
   background-size: cover;
   height: 582px;
-  width:100%;
+  width: 100%;
 }
-.banner-content{
+
+.banner-content {
   height: 580px;
 }
-.intro{
+
+.intro {
   height: 420px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.card{
+
+.card {
   border-radius: 16px;
 }
-.card-img{
+
+.card-img {
   border-radius: 16px;
 }
-.teacher-img{
+
+.teacher-img {
   width: 94px;
   height: 94px;
 }
-.teacher-banner{
+
+.teacher-banner {
   width: 540px;
   height: 628px;
   border-radius: 16px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.title{
+
+.title {
   font-weight: bold;
   color: #907A7B;
 }
-.subtitle{
+
+.subtitle {
   font-weight: bold;
   color: #c0a4a5;
 }
-.course-img{
+
+.course-img {
   height: 350px;
   border-radius: 16px 16px 0 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.course-btn{
+
+.course-btn {
   width: 302px;
   color: white;
 }
-.space-main-img{
+
+.space-main-img {
   width: 350px;
   height: 444px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.space-sub-img{
+
+.space-sub-img {
   width: 160px;
   height: 207px;
 }
-.h-444{
+
+.h-444 {
   height: 444px;
 }
-// reservation
-.course-item{
+
+.course-item {
   width: 330px;
   height: 215px;
 }
-.course-level{
+
+.course-level {
   height: 393px;
 }
-.course-icon{
+
+.course-icon {
   width: 36px;
   height: 36px;
 }
-.attention{
+
+.attention {
   width: 445px;
 }
-.reservation-btn{
+
+.reservation-btn {
   width: 350px;
 }
-.footer-icon{
+
+.footer-icon {
   width: 24px;
   height: 24px;
 }
+
+/*# sourceMappingURL=index.css.map */
